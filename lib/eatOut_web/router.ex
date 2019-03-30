@@ -17,10 +17,20 @@ defmodule EatOutWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    get "/register", PageController, :register
+    get "/profile", PageController, :profile
   end
 
   # Other scopes may use custom stacks.
   # scope "/api", EatOutWeb do
   #   pipe_through :api
   # end
+
+  scope "/api/v1", FoodFinderWeb do
+    pipe_through :api
+
+    resources "/sessions", SessionController, only: [:create]
+    resources "/users", UserController
+
+  end
 end

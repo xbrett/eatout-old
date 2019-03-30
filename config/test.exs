@@ -11,8 +11,8 @@ config :logger, level: :warn
 
 # Configure your database
 config :eatOut, EatOut.Repo,
-  username: "postgres",
-  password: "postgres",
+  username: "eatout",
+  password: "eatoutpassword",
   database: "eatout_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox

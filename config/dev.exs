@@ -68,8 +68,8 @@ config :phoenix, :plug_init_mode, :runtime
 
 # Configure your database
 config :eatOut, EatOut.Repo,
-  username: "postgres",
-  password: "postgres",
+  username: "eatout",
+  password: "eatoutpassword",
   database: "eatout_dev",
   hostname: "localhost",
   pool_size: 10
