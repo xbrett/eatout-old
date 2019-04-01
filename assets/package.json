@@ -6,6 +6,7 @@
     "watch": "webpack --mode development --watch"
   },
   "dependencies": {
+    "babel": "^6.23.0",
     "bootstrap": "^4.3.1",
     "deep-freeze": "0.0.1",
     "jquery": "^3.3.1",
@@ -24,6 +25,7 @@
     "mini-css-extract-plugin": "^0.4.0",
     "node-sass": "^4.11.0",
     "optimize-css-assets-webpack-plugin": "^4.0.0",
+    "redux-devtools": "^3.5.0",
     "sass-loader": "^7.1.0",
     "uglifyjs-webpack-plugin": "^1.2.4",
     "webpack": "4.4.0",

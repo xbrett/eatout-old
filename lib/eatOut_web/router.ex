@@ -19,6 +19,9 @@ defmodule EatOutWeb.Router do
     get "/", PageController, :index
     get "/register", PageController, :register
     get "/profile", PageController, :profile
+    resources "/reviews", ReviewController
+    resources "/chats", ChatController
+    resources "/friends", FriendController
   end
 
   # Other scopes may use custom stacks.

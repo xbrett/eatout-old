@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Provider } from "react-redux";
 import { Link, BrowserRouter as Router, Route } from "react-router-dom";
 import _ from "lodash";
 import $ from "jquery";
 import { connect } from "react-redux";
+import { Provider } from "react-redux"
 
 import store from "./store"
 import api from "./api";
@@ -15,8 +15,8 @@ import Profile from "./profile";
 import Chat from "./chat";
 import RestaurantProfile from "./restaurant";
 
-export default function root_init(node) {
-  let Root = connect(state2props)(Root);
+export default function root_init(node, store) {
+  //let Root = connect(state2props)(Root);
 
   ReactDOM.render(
     <Provider store={store}>

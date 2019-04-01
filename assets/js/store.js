@@ -14,17 +14,18 @@ function session(state0 = null, action) {
 }
 
 function users(state0 = [], action) {
-  switch (action.type) {
-    case "USER_LIST":
-      return action.data;
-    case "NEW_USER":
-      return action.data;
-    case "DELETE_USER":
-      state0 = null;
-      return state0;
-    default:
-      return state0;
-  }
+  // switch (action.type) {
+  //   case "USER_LIST":
+  //     return action.data;
+  //   case "NEW_USER":
+  //     return action.data;
+  //   case "DELETE_USER":
+  //     state0 = null;
+  //     return state0;
+  //   default:
+  //     return state0;
+  // }
+  return state;
 }
 
 function root_reducer(state0, action) {
